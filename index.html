@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="images/site.webmanifest">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="fontawesome/css/all.min.css" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lotto Game (Baba Ijebu)</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-around mt-5">
+            <div class="col-md-4 col-sm-12">
+                <div class="inner-col ">
+                    <div class="card p-4">
+                        <div class="card-header">
+                            <h4 class="text-center text-warning">Welcome To Lotto Game (Baba Ijebu)</h4>
+                        </div>
+                        <div class="card-body">
+                            <h3 class="text-center">Select Your Game Mode</h3>
+                            <form action="" id="lotto-form" class="">
+                                <div class="form-group  d-flex justify-content-center mt-2 ">
+                                    <!-- <label for="label" class="text-primary form-group-label"> <b> Select Game </b></label> -->
+                                    <div class="form-check mx-2">
+                                         <input type="radio"  value="sure" name="type" class="form-check-input" id="sure">
+                                        <label for="" class="form-check-label">2- Sure</label>
+                                    </div>
+                                   
+                                    <div class="form-check mx-2">
+                                        <input  type="radio" value="direct" name="type" class="form-check-input" id="direct">
+                                        <label for="" class="form-check-label">3- Direct</label>
+                                    </div>
+                                </div>
+                                <!-- For Two sure -->
+                                <div class="sure  text-center mt-3"> 
+                                    <div class="row justify-content-center">
+                                       <div id="con"  class=" sure-con d-none mt-4 ">  
+                                        <h6 class="text-center">Enter Your Number inside the box</h6>
+                                         <div  class=" d-flex justify-content-center mt-2">
+                                         <input maxlength="2" class="no-field one" type="text" name="first_no" id="first-no">
+                                         <input maxlength="2" class="no-field two" type="text" name="second_no" id="second-no">
+                                         <input maxlength="2" class="no-field three" type="text" name="third_no" id="third-no">
+                                         <input name="play"  type="submit" class="btn rounded-pill btn-success" value="Play" >
+                                       </div>
+                                       <h6 id="error" class="text-center mt-2 text-danger"></h6>
+                                    </div> 
+                                        <div d="direct-con" class="div direct-con d-none mt-4 d-flex justify-content-center">
+                                      </div>
+                                    </div>
+                                
+                             </div>
+                             <!-- Input for two sure -->
+                            </form>
+                            <h4 id="game_result-h" class="text-center mt-3"></h4> <hr>
+                            <h5 id="input_nos" class="text-center mt-3"></h5>
+                            <h5 id="generated_no" class="text-center mt-3"> </h5>
+                            <h5 id="status" class="text-center mt-3"></h5>
+                        </div>
+                        <div class="card-footer">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   <script src="script.js"></script>
+</body>
+</html>
